@@ -10,7 +10,7 @@ created_at: "2025-07-15"
 # Table Of Contents (by Date)
 
 - [2025-07-15](#2025-07-15---research)
-- [2025-07-16](#2025-07-16---more-research--pcb-design))
+- [2025-07-16](#2025-07-16---more-research--pcb-design)
 
 # 2025-07-15 - Research
 
