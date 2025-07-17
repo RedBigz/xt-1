@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "tailplug")(type "KiCad")(uri "${KIPRJMOD}/../tailplug.kicad_sym")(options "")(descr ""))
+)

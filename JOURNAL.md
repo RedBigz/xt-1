@@ -5,12 +5,13 @@ description: "Modular CoreXY 3D Printer with a focus on repairability."
 created_at: "2025-07-15"
 ---
 
-**Total time:** 7 hours
+**Total time:** 12 hours
 
 # Table Of Contents (by Date)
 
 - [2025-07-15](#2025-07-15---research)
 - [2025-07-16](#2025-07-16---more-research--pcb-design)
+- [2025-07-17](#2025-07-17---starting-pcb-design)
 
 # 2025-07-15 - Research
 
@@ -66,3 +67,25 @@ I got about this much done in terms of an Ethernet connection (MagJack) before c
 ![epic fail](img/2025/07/16/skill_issue.png)
 <br>
 Figure 1 - _After hours of reading datasheets, all I could make was this._
+
+# 2025-07-17 - Starting PCB design
+
+**Estimated time:** 5 hours
+
+## The Dovetail Plug system
+(also known as the tail plug system 😬😬😬, i'll be shortening it to t-plug from here on out)
+
+![image of the glorious t-plug schematic](img/2025/07/17/tplug-schem.png)
+<br>
+Here is the system for swappable toolhead attachments. I've decided on these main points:
+- The CR-Touch will NOT use the attachment system as it requires multiple grounds and for the Z stepper to be on the same MCU (not happening)
+- The 5V and 24V PWM inputs will be turned on as soon as both **CONT** pins are connected (in the event of a connection)
+- One UART bus will be connected for the center module (the Pi Pico only has two UART buses and one needs to be used to connect to the Linux Pi)
+
+I took the time to figure out KiCad and make the necessary symbols and footprints for the t-plug.
+
+Here is the female PCB, using a JST-PH to communicate with the extruder board:
+![t-plug female pcb](img/2025/07/17/pcb.png)
+![t-plug female pcb but in 3d :3](img/2025/07/17/3d.png)
+<br>
+*look at my princess isnt she bootiful*
