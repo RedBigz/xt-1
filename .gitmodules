@@ -1,0 +1,3 @@
+[submodule "external_libs/RPi-CM4-Kicad"]
+	path = external_libs/RPi-CM4-Kicad
+	url = https://github.com/Kedarius/RPi-CM4-Kicad

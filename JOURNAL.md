@@ -6,8 +6,9 @@ created_at: "2025-07-15"
 ---
 
 # Table Of Contents (by Date)
-- 2025-07-15
-    - [Research](#2025-07-15---research)
+
+- [2025-07-15](#2025-07-15---research)
+- [2025-07-16](#2025-07-16---more-research--pcb-design))
 
 # 2025-07-15 - Research
 
@@ -47,3 +48,19 @@ I've been researching today about 3D printer parts and brainstorming all the log
 - Lancer Melt Zone Long Hotend
 - Nema 17 Steppers
 - 3 Dovetail Bays for fans & expansions
+
+# 2025-07-16 - More research & PCB design
+
+**Estimated time:** 3 hours
+
+## On Pi Compute Modules
+
+For designing a motherboard with the Pi 4, I'll need to solder Hirose `DF40C-100DS-0.4v` connectors, which are SMD.
+
+## Designing the PCB (and failing)
+
+I got about this much done in terms of an Ethernet connection (MagJack) before calling quits. **I'm now deciding to run a regular Raspberry Pi 4 and use a stock motherboard such as the BTT SKR MINI.**
+
+![epic fail](img/2025/07/16/skill_issue.png)
+<br>
+Figure 1 - _After hours of reading datasheets, all I could make was this._
