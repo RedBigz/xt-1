@@ -5,13 +5,14 @@ description: "Modular CoreXY 3D Printer with a focus on repairability."
 created_at: "2025-07-15"
 ---
 
-**Total time:** 12 hours
+**Total time:** 18 hours
 
 # Table Of Contents (by Date)
 
 - [2025-07-15](#2025-07-15---research)
 - [2025-07-16](#2025-07-16---more-research--pcb-design)
 - [2025-07-17](#2025-07-17---starting-pcb-design)
+- [2025-07-18](#2025-07-18---cad-designing-and-fixes)
 
 # 2025-07-15 - Research
 
@@ -89,3 +90,29 @@ Here is the female PCB, using a JST-PH to communicate with the extruder board:
 ![t-plug female pcb but in 3d :3](img/2025/07/17/3d.png)
 <br>
 *look at my princess isnt she bootiful*
+
+# 2025-07-18 - CAD Designing and fixes
+
+**Estimated time: 6 hours**
+
+## Plug Design
+
+i've got the thing in OnShape now, and designed a dovetail system for keeping the pogo pins in place.
+
+![t-plug in cad!](img/2025/07/18/tplug_cad.png)
+
+## Base Design
+
+![base number 0](img/2025/07/18/base_0.png)
+
+## Fixes
+
+### Shorting avoidance on the T-plug
+
+![fixed t-plug schematic](img/2025/07/18/fixed_tplug.png)
+
+I moved ground away from the powered pads to avoid pogo pins shorting due to proximity when sliding. I also changed the pad size of the female receptacle to avoid such proximity (as the pins are 0.9mm and the gap was 0.5mm):
+
+![smaller pads!](img/2025/07/18/smaller_pads.png)
+
+![tplug female pcb, fixed](img/2025/07/18/tp_fem_pcb_3d.png)

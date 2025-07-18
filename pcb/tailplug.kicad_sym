@@ -205,10 +205,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 0 -6.35 0)
 				(length 2.032)
-				(name "UART_TX"
+				(name "GND"
 					(effects
 						(font
 							(size 0.762 0.762)
@@ -241,10 +241,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at 0 -8.89 0)
 				(length 2.032)
-				(name "GND"
+				(name "UART_TX"
 					(effects
 						(font
 							(size 0.762 0.762)
