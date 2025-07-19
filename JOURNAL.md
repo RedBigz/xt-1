@@ -5,7 +5,24 @@ description: "Modular CoreXY 3D Printer with a focus on repairability."
 created_at: "2025-07-15"
 ---
 
-**Total time:** 25 hours
+**Total time:** 26 hours
+
+# Checklist
+## Pre-Design
+- [x] Research
+- [x] Part Picking
+## Design
+- [ ] T-Plug
+    - [x] Female Connector
+    - [ ] Male Connector
+- [ ] Toolhead
+    - [x] Hotend
+    - [x] Extruder
+    - [ ] Electronics
+- [ ] Gantry
+- [ ] Bed
+- [x] Base
+    - [x] Base Extrusions
 
 # Table Of Contents (by Date)
 
@@ -120,9 +137,15 @@ I moved ground away from the powered pads to avoid pogo pins shorting due to pro
 
 # 2025-07-19 - Toolhead
 
-**Estimated time:** 7 hours
+**Estimated time:** 8 hours
 
 I'm pretty tired so I'll cut to the chase here. I made about 70% of the toolhead, and the only things left are the electronics and fans.
 
+Using a [ProtoXtruder](https://github.com/nhchiu/3DPrinter-Designs/tree/main/ProtoXtruder_2.0) for the extruder, with a Nema 14 36mm Round Pancake motor (10T gear)
+
 ![toolhead](img/2025/07/19/printhead1.png)
 ![toolhead](img/2025/07/19/printhead2.png)
+
+UPDATE: Fixed some heights to make it stronger:
+
+![toolhead fixed](img/2025/07/19/printhead3.png)
