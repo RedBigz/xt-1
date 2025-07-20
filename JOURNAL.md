@@ -5,24 +5,26 @@ description: "Modular CoreXY 3D Printer with a focus on repairability."
 created_at: "2025-07-15"
 ---
 
-**Total time:** 26 hours
+**Total time:** 33 hours
 
 # Checklist
 ## Pre-Design
 - [x] Research
 - [x] Part Picking
 ## Design
-- [ ] T-Plug
+- [x] T-Plug
     - [x] Female Connector
-    - [ ] Male Connector
-- [ ] Toolhead
+    - [x] Male Connector
+- [x] Toolhead *(note: excl. part cooling fans as they're modules)*
     - [x] Hotend
     - [x] Extruder
-    - [ ] Electronics
+    - [x] Electronics
 - [ ] Gantry
 - [ ] Bed
 - [x] Base
     - [x] Base Extrusions
+- [ ] Modules
+    - [ ] 5015 Part Cooling Fan
 
 # Table Of Contents (by Date)
 
@@ -31,6 +33,7 @@ created_at: "2025-07-15"
 - [2025-07-17](#2025-07-17---starting-pcb-design)
 - [2025-07-18](#2025-07-18---cad-designing-and-fixes)
 - [2025-07-19](#2025-07-19---toolhead)
+- [2025-07-20](#2025-07-20---more-toolhead)
 
 # 2025-07-15 - Research
 
@@ -149,3 +152,26 @@ Using a [ProtoXtruder](https://github.com/nhchiu/3DPrinter-Designs/tree/main/Pro
 UPDATE: Fixed some heights to make it stronger:
 
 ![toolhead fixed](img/2025/07/19/printhead3.png)
+
+# 2025-07-20 - More Toolhead
+
+**Estimated time:** 7 hours
+
+## Finished* Toolhead
+
+I've added:
+- a 4010 fan (Noctua)
+- a belt holder (which doubles as a CR-Touch mount)
+- two t-plug bays (I know I said three but there isn't much of a use with three considering the CR-Touch isn't a module)
+
+![the finished toolhead, apart from modules.](img/2025/07/20/th1.png)
+![the back side of the toolhead](img/2025/07/20/th2.png)
+
+Speaking of which, here is the male t-plug connector:
+
+![male t-plug connector](img/2025/07/20/tpm1.png)
+![back side of the male t-plug](img/2025/07/20/tpm2.png)
+![pcb screenshot of the male t-plug](img/2025/07/20/tpm3.png)
+![3d view of the male t-plug in kicad](img/2025/07/20/tpm4.png)
+
+There's just enough clearance for the connection to the female bay (1.5mm) :3
