@@ -5,7 +5,7 @@ description: "Modular CoreXY 3D Printer with a focus on repairability."
 created_at: "2025-07-15"
 ---
 
-**Total time:** 33 hours
+**Total time:** 38 hours
 
 # Checklist
 ## Pre-Design
@@ -23,8 +23,8 @@ created_at: "2025-07-15"
 - [ ] Bed
 - [x] Base
     - [x] Base Extrusions
-- [ ] Modules
-    - [ ] 5015 Part Cooling Fan
+- [x] Modules
+    - [x] 5015 Part Cooling Fan
 
 # Table Of Contents (by Date)
 
@@ -34,6 +34,7 @@ created_at: "2025-07-15"
 - [2025-07-18](#2025-07-18---cad-designing-and-fixes)
 - [2025-07-19](#2025-07-19---toolhead)
 - [2025-07-20](#2025-07-20---more-toolhead)
+- [2025-07-21](#2025-07-21---fan-ducts-was-pretty-unproductive)
 
 # 2025-07-15 - Research
 
@@ -175,3 +176,13 @@ Speaking of which, here is the male t-plug connector:
 ![3d view of the male t-plug in kicad](img/2025/07/20/tpm4.png)
 
 There's just enough clearance for the connection to the female bay (1.5mm) :3
+
+# 2025-07-21 - Fan Ducts! (was pretty unproductive)
+
+**Estimated time:** 5 hours
+
+Today was pretty unproductive. I only managed to get two 5015 fan modules done. Due to the sliding mechanism, the fan module won't slide in unless the fans are screwed in after the frame is slid in.
+
+You gotta admit it looks cool though:
+
+![cool toolhead](img/2025/07/21/th1.png)
