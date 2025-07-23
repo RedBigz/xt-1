@@ -5,26 +5,33 @@ description: "Modular CoreXY 3D Printer with a focus on repairability."
 created_at: "2025-07-15"
 ---
 
-**Total time:** 38 hours
+**Total time:** 52 hours
 
 # Checklist
+
 ## Pre-Design
+
 - [x] Research
 - [x] Part Picking
+
 ## Design
+
 - [x] T-Plug
-    - [x] Female Connector
-    - [x] Male Connector
-- [x] Toolhead *(note: excl. part cooling fans as they're modules)*
-    - [x] Hotend
-    - [x] Extruder
-    - [x] Electronics
-- [ ] Gantry
+  - [x] Female Connector
+  - [x] Male Connector
+- [x] Toolhead _(note: excl. part cooling fans as they're modules)_
+  - [x] Hotend
+  - [x] Extruder
+  - [x] Electronics
+- [x] Gantry
 - [ ] Bed
-- [x] Base
-    - [x] Base Extrusions
+- [ ] Base
+  - [ ] Base Extrusions
 - [x] Modules
-    - [x] 5015 Part Cooling Fan
+  - [x] 5015 Part Cooling Fan
+- [ ] Motherboard
+  - [x] Schematic
+  - [ ] PCB
 
 # Table Of Contents (by Date)
 
@@ -35,6 +42,8 @@ created_at: "2025-07-15"
 - [2025-07-19](#2025-07-19---toolhead)
 - [2025-07-20](#2025-07-20---more-toolhead)
 - [2025-07-21](#2025-07-21---fan-ducts-was-pretty-unproductive)
+- [2025-07-22](#2025-07-22---gantry)
+- [2025-07-23](#2025-07-23---gantry--supplementary-motherboard)
 
 # 2025-07-15 - Research
 
@@ -96,11 +105,13 @@ Figure 1 - _After hours of reading datasheets, all I could make was this._
 **Estimated time:** 5 hours
 
 ## The Dovetail Plug system
+
 (also known as the tail plug system 😬😬😬, i'll be shortening it to t-plug from here on out)
 
 ![image of the glorious t-plug schematic](img/2025/07/17/tplug-schem.png)
 <br>
 Here is the system for swappable toolhead attachments. I've decided on these main points:
+
 - The CR-Touch will NOT use the attachment system as it requires multiple grounds and for the Z stepper to be on the same MCU (not happening)
 - The 5V and 24V PWM inputs will be turned on as soon as both **CONT** pins are connected (in the event of a connection)
 - One UART bus will be connected for the center module (the Pi Pico only has two UART buses and one needs to be used to connect to the Linux Pi)
@@ -111,7 +122,7 @@ Here is the female PCB, using a JST-PH to communicate with the extruder board:
 ![t-plug female pcb](img/2025/07/17/pcb.png)
 ![t-plug female pcb but in 3d :3](img/2025/07/17/3d.png)
 <br>
-*look at my princess isnt she bootiful*
+_look at my princess isnt she bootiful_
 
 # 2025-07-18 - CAD Designing and fixes
 
@@ -158,9 +169,10 @@ UPDATE: Fixed some heights to make it stronger:
 
 **Estimated time:** 7 hours
 
-## Finished* Toolhead
+## Finished\* Toolhead
 
 I've added:
+
 - a 4010 fan (Noctua)
 - a belt holder (which doubles as a CR-Touch mount)
 - two t-plug bays (I know I said three but there isn't much of a use with three considering the CR-Touch isn't a module)
@@ -186,3 +198,35 @@ Today was pretty unproductive. I only managed to get two 5015 fan modules done. 
 You gotta admit it looks cool though:
 
 ![cool toolhead](img/2025/07/21/th1.png)
+
+# 2025-07-22 - Gantry
+
+**Estimated time:** 6 hours
+
+I got a really productive session in CAD today. I've got the toolhead set up on a 360x360 gantry, along with the motor mounts and X axis idlers.
+
+![the gantry!](img/2025/07/22/gantry1.png)
+
+Here's the dual-idler design I came up with (took some inspiration from other CoreXY printers):
+
+![an x-axis dual-idler mount](img/2025/07/22/idler1.png)
+
+I'm basing my belt setup based on this image found in the [Anicept Vex CoreXY](https://highway.hackclub.com/guides/anicept-vex-corexy) guide in Highway:
+
+![anicept corexy image](img/2025/07/22/anicept_corexy.png)
+
+# 2025-07-23 - Gantry & (Supplementary) Motherboard
+
+**Estimated time:** 8 hours
+
+I'm pretty tired (again), so I'll just recount what I did.
+
+I finished my gantry in its entirety:
+
+![finished gantry](img/2025/07/23/gantry1.png)
+
+I made custom mounts for all the idlers, and worked out a belt path that *barely* works. I'll tweak it while building the thing, since I'm starting to run out of time before Highway ends. I've worked out a gantry area of about 190x180 for the toolhead.
+
+Also, I've started work on a supplementary motherboard (yep, this lil guy has two moms!). It holds three limited ports for the t-plug system (lacking CONT due to a gpio shortage), with one having access to the secondary UART bus. Here's the finished schematic:
+
+![motherboard schematic](img/2025/07/23/mobo1.png)
