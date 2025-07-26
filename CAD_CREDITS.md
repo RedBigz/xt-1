@@ -18,6 +18,7 @@ Hello! Here are the CAD files I utilised in my project:
 
 - GT2 Pulley - https://grabcad.com/library/pulley-gt2-20t-b5-1
 - GT2 Idler - https://grabcad.com/library/gt2-pulleys-80-tooth-20-tooth-idlers-6-9-mm-wide-1
+- Smooth GT2 Idler - https://grabcad.com/library/gates-powergrip-2gt-smooth-idler-6mm-belt-12mm-od-5mm-id-e3d-1
 - Linear Rails (configurator) - https://www.hiwin.de/en/tools/produktkonfiguratoren
 - Linear Block - https://grabcad.com/library/mgn12-linear-guide-subassembly-configurable-rail-length-from-100-mm-to-2000-mm-in-increments-of-50-mm-1
 

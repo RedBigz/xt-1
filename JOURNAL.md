@@ -5,7 +5,7 @@ description: "Modular CoreXY 3D Printer with a focus on repairability."
 created_at: "2025-07-15"
 ---
 
-**Total time:** 52 hours
+**Total time:** 84 hours
 
 # Checklist
 
@@ -24,14 +24,18 @@ created_at: "2025-07-15"
   - [x] Extruder
   - [x] Electronics
 - [x] Gantry
-- [ ] Bed
-- [ ] Base
-  - [ ] Base Extrusions
+- [x] Bed
+- [x] Base
+  - [x] Base Extrusions
 - [x] Modules
   - [x] 5015 Part Cooling Fan
-- [ ] Motherboard
+- [x] Motherboard
   - [x] Schematic
-  - [ ] PCB
+  - [x] PCB
+
+### Extra Features I Want
+
+- [ ] Belt Tensioner
 
 # Table Of Contents (by Date)
 
@@ -44,6 +48,8 @@ created_at: "2025-07-15"
 - [2025-07-21](#2025-07-21---fan-ducts-was-pretty-unproductive)
 - [2025-07-22](#2025-07-22---gantry)
 - [2025-07-23](#2025-07-23---gantry--supplementary-motherboard)
+- [2025-07-24/25](#2025-07-2425---bed--supplementary-motherboard)
+- [2025-07-26](#2025-07-26---electronics-and-fixes)
 
 # 2025-07-15 - Research
 
@@ -225,8 +231,79 @@ I finished my gantry in its entirety:
 
 ![finished gantry](img/2025/07/23/gantry1.png)
 
-I made custom mounts for all the idlers, and worked out a belt path that *barely* works. I'll tweak it while building the thing, since I'm starting to run out of time before Highway ends. I've worked out a gantry area of about 190x180 for the toolhead.
+I made custom mounts for all the idlers, and worked out a belt path that _barely_ works. I'll tweak it while building the thing, since I'm starting to run out of time before Highway ends. I've worked out a gantry area of about 190x180 for the toolhead.
 
 Also, I've started work on a supplementary motherboard (yep, this lil guy has two moms!). It holds three limited ports for the t-plug system (lacking CONT due to a gpio shortage), with one having access to the secondary UART bus. Here's the finished schematic:
 
 ![motherboard schematic](img/2025/07/23/mobo1.png)
+
+# 2025-07-24/25 - Bed & Supplementary Motherboard
+
+**Estimated time:** 20 hours
+
+## Bed
+
+I've considered using linear rods with LM8UU bearings (the small ones), along with lead screws. I've decided to not use kinematic mounting as it'll add time to a project where not a lot of time is left to submit. I'm using a hotplate from the Lerdge iX cantilever printer as it fits my print size
+
+Here's the bed:
+
+![mostly finished bed](img/2025/07/25/bed1.png)
+
+I've also taken the time to assemble the bed and gantry into a full assembly:
+
+![full assembly](img/2025/07/25/full1.png)
+
+I've also turned the motherboard schematic into a PCB (with a little help from freerouting :3):
+
+![motherboard pcb](img/2025/07/25/mobo1.png)
+
+# 2025-07-26 - Electronics and fixes
+
+**Estimated time:** 12 hours
+
+## Fixes
+
+### T-Plug Receptacles
+
+I fixed a collision issue with screws on the t-plug receptacles colliding with the male plug. I fixed this by adding an indent for pan screws.
+
+![indentation on the fixed t-plug](img/2025/07/26/tplg1.png)
+
+### Gantry
+
+When working on my to-fix list, I noticed that:
+1. my gantry was fairly uneven
+2. nothing was perpendicular, so when the carriage moves the belt tension will change (leading to snapping or stretching).
+
+You can see these issues prevalent here:
+
+![borked gantry](img/2025/07/26/badgantry1.png)
+
+As you can see in this diagram by [Mark Rehorst](https://drmrehorst.blogspot.com/2018/08/corexy-mechanism-layout-and-belt.html), the critical CoreXY components need to be perpendicular:
+
+![corexy diagram](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgofhnKOGb9_U8k_Ix1NziTJNxAsWXzaCZB5KuxN6fsGrmuh54LpXvGjtK4_rJlxGdtXgRD1clabU8sC8h_SFTkcYvW-WhaXX2XV5GT9Z6wwPJDSJTewiZqcOR5iHzjAIeZVflZUcBTxI2e/w640-h462/simple_belts_corexy_annotated.jpg)
+
+*Original Caption: UMMD's coreXY mechanism.  All the pulleys are stacked, and belt segments A-H are parallel to the guide rails.*
+
+I mitigated this by redesigning the gantry correctly:
+
+![fixed gantry](img/2025/07/26/gantry1.png)
+
+## Additions
+
+### Electronics
+
+On one of my feet, I've added a compartment holding my Raspberry Pi, SKR, and Supplementary Motherboard:
+
+![electronics compartment](img/2025/07/26/elec1.png)
+
+I've also added a singular screw mount for holding the PSU. It's not intended to be secured, but just to position the PSU (at least for now).
+
+![psu mount pic #1](img/2025/07/26/psu1.png)
+![psu mount pic #2](img/2025/07/26/psu2.png)
+
+## Full Screenshot
+
+Here's the final build (at least until I make the belt tensioner):
+
+![full screenshot of the printer](img/2025/07/26/full1.png)
