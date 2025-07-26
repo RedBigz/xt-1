@@ -37,3 +37,8 @@ Hello! Here are the CAD files I utilised in my project:
 ### Other Electronics
 
 - XL4015 Buck Converter - https://grabcad.com/library/xl4015-1
+- LRS-350 PSU - https://www.digikey.sg/en/models/7705034
+
+### Mounts
+
+- LRS-350 Cover - https://www.printables.com/model/53920-meanwell-lrs-350-outlet-and-cover
