@@ -5,7 +5,10 @@ description: "Modular CoreXY 3D Printer with a focus on repairability."
 created_at: "2025-07-15"
 ---
 
-**Total time:** 84 hours
+**Total time:** 89 hours
+
+# FOR REVIEWERS
+If you haven't already, [read this document](./FOR_REVIEWERS.md). It outlines the differences between the CAD model and the theoretical real-life build. As you can guess, the CAD model is based on correct schematics (and placeholder CAD models from the internet don't always confine themselves to those measurements). I display all the crucial differences in this document, so I highly suggest you read it first.
 
 # Checklist
 
@@ -35,7 +38,7 @@ created_at: "2025-07-15"
 
 ### Extra Features I Want
 
-- [ ] Belt Tensioner
+- [x] Belt Tensioner
 
 # Table Of Contents (by Date)
 
@@ -50,6 +53,7 @@ created_at: "2025-07-15"
 - [2025-07-23](#2025-07-23---gantry--supplementary-motherboard)
 - [2025-07-24/25](#2025-07-2425---bed--supplementary-motherboard)
 - [2025-07-26](#2025-07-26---electronics-and-fixes)
+- [2025-07-27](#2025-07-27-minor-fixes--additions)
 
 # 2025-07-15 - Research
 
@@ -243,7 +247,7 @@ Also, I've started work on a supplementary motherboard (yep, this lil guy has tw
 
 ## Bed
 
-I've considered using linear rods with LM8UU bearings (the small ones), along with lead screws. I've decided to not use kinematic mounting as it'll add time to a project where not a lot of time is left to submit. I'm using a hotplate from the Lerdge iX cantilever printer as it fits my print size
+I've considered using linear rods with LM8UU bearings (the small ones), along with lead screws. I've decided to not use kinematic mounting as it'll add time to a project where not a lot of time is left to submit. I'm using a hotplate from the Lerdge iX cantilever printer as it fits my print size.
 
 Here's the bed:
 
@@ -302,8 +306,49 @@ I've also added a singular screw mount for holding the PSU. It's not intended to
 ![psu mount pic #1](img/2025/07/26/psu1.png)
 ![psu mount pic #2](img/2025/07/26/psu2.png)
 
+*You can also see in the first photo that I'm using a PSU enclosure. You can find the model and its author [here](https://www.printables.com/model/53920-meanwell-lrs-350-outlet-and-cover) (thanks pmichaud!).*
+
 ## Full Screenshot
 
 Here's the final build (at least until I make the belt tensioner):
 
 ![full screenshot of the printer](img/2025/07/26/full1.png)
+
+# 2025-07-27 Minor Fixes & Additions
+
+**Estimated time:** 9 hours
+
+## Belt Tensioner
+
+I've finally implemented a belt tensioner system (although somewhat jank).
+
+![belt tensioners mounted on gantry](img/2025/07/27/tensioner1.png)
+
+It uses a dovetail system with a bolt and nut holding it in place.
+
+![](img/2025/07/27/tensioner2.png) ![](img/2025/07/27/tensioner3.png)
+
+Due to a possible collision in the tensioner with the belt, I've opted to add smooth idlers to the opposite belt being tensioned (as seen in the first photo). However, this causes the other belt to be tensioned as well - offset by the diameter of the inner part of the pulley. Having two tensioners allows the user to counteract this effect.
+
+## Electronics Lid & Mobo Fan Mod
+
+*Hi! For this segment I'm utilising [this](https://www.printables.com/model/218425-btt-skr-mini-e3-4010-fan-holder) fan mod designed for a VORON V0.1 printer. Thanks 3DMegoldasok!*
+
+I've firstly added a lid for the electronics box, secured with three M3 screws. There are two cutouts, one for a fan and one for the main stepper motor.
+
+![electronics lid](img/2025/07/27/lid1.png)
+
+I've placed the fan mod described above down on the main board:
+
+![fan mod](img/2025/07/27/fan1.png)
+
+Additionally, I've added exhaust holes for the hot air to escape:
+
+![grilles on the side of the box](img/2025/07/27/lid2.png)
+
+## Minor Fixes
+These aren't on screenshots in the journal, but here are some minor fixes I implemented for consistency:
+- Mounting screw shafts for objects on top of the gantry extrusions have been reduced to 10mm, allowing for M5x15 screws to be used throughout the gantry. This has also happened on the toolhead, but just to make the screw size a bit more understandable (not at exactly 10mm though).
+- Gantry object screw shafts have been inspected and fixed (I had found holes in some areas of pulley holders)
+
+A lot of the time from this journal section was devoted to working on the BOM. I should be done with it tomorrow.

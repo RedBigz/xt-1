@@ -2,6 +2,10 @@
 
 Hello! Here are the CAD files I utilised in my project:
 
+## Voron Mods
+
+- BTT SKR Mini E3 4010 Fan holder - https://www.printables.com/model/218425-btt-skr-mini-e3-4010-fan-holder
+
 ## Common
 
 - NEMA 17 - https://grabcad.com/library/stepper-motor-nema-17
@@ -39,6 +43,7 @@ Hello! Here are the CAD files I utilised in my project:
 
 - XL4015 Buck Converter - https://grabcad.com/library/xl4015-1
 - LRS-350 PSU - https://www.digikey.sg/en/models/7705034
+- ADXL345 Module - https://grabcad.com/library/adxl345-digital-accelerometer-adafuit-breakout-board-1
 
 ### Mounts
 
