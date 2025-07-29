@@ -5,9 +5,10 @@ description: "Modular CoreXY 3D Printer with a focus on repairability."
 created_at: "2025-07-15"
 ---
 
-**Total time:** 89 hours
+**Total time:** 100 hours
 
 # FOR REVIEWERS
+
 If you haven't already, [read this document](./FOR_REVIEWERS.md). It outlines the differences between the CAD model and the theoretical real-life build. As you can guess, the CAD model is based on correct schematics (and placeholder CAD models from the internet don't always confine themselves to those measurements). I display all the crucial differences in this document, so I highly suggest you read it first.
 
 # Checklist
@@ -54,6 +55,7 @@ If you haven't already, [read this document](./FOR_REVIEWERS.md). It outlines th
 - [2025-07-24/25](#2025-07-2425---bed--supplementary-motherboard)
 - [2025-07-26](#2025-07-26---electronics-and-fixes)
 - [2025-07-27](#2025-07-27-minor-fixes--additions)
+- [2025-07-28/29](#2025-07-2829---journaling)
 
 # 2025-07-15 - Research
 
@@ -64,7 +66,7 @@ I've been researching today about 3D printer parts and brainstorming all the log
 ## Designing Factors
 
 - I want my printer to be easily user-repairable without any issues (taking inspiration from Framework devices)
-- Single/two common screw heads used throughout the build (I'm thinking of Torx T10 or T5)
+- Single/two common screw heads used throughout the build (I'm thinking of Torx T10 or T5) \*\*(NOTE FROM THE FUTURE: Turns out it's hard to source Torx screws! I'm going with Philips/Hex heads)
 - _Attempting_ to do a heated bed
 - Controlled via a socketed Pi CM3/CM4 (Klipper)
 - SUPER EASY TO DISASSEMBLE!
@@ -276,6 +278,7 @@ I fixed a collision issue with screws on the t-plug receptacles colliding with t
 ### Gantry
 
 When working on my to-fix list, I noticed that:
+
 1. my gantry was fairly uneven
 2. nothing was perpendicular, so when the carriage moves the belt tension will change (leading to snapping or stretching).
 
@@ -287,7 +290,7 @@ As you can see in this diagram by [Mark Rehorst](https://drmrehorst.blogspot.com
 
 ![corexy diagram](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgofhnKOGb9_U8k_Ix1NziTJNxAsWXzaCZB5KuxN6fsGrmuh54LpXvGjtK4_rJlxGdtXgRD1clabU8sC8h_SFTkcYvW-WhaXX2XV5GT9Z6wwPJDSJTewiZqcOR5iHzjAIeZVflZUcBTxI2e/w640-h462/simple_belts_corexy_annotated.jpg)
 
-*Original Caption: UMMD's coreXY mechanism.  All the pulleys are stacked, and belt segments A-H are parallel to the guide rails.*
+_Original Caption: UMMD's coreXY mechanism. All the pulleys are stacked, and belt segments A-H are parallel to the guide rails._
 
 I mitigated this by redesigning the gantry correctly:
 
@@ -306,7 +309,7 @@ I've also added a singular screw mount for holding the PSU. It's not intended to
 ![psu mount pic #1](img/2025/07/26/psu1.png)
 ![psu mount pic #2](img/2025/07/26/psu2.png)
 
-*You can also see in the first photo that I'm using a PSU enclosure. You can find the model and its author [here](https://www.printables.com/model/53920-meanwell-lrs-350-outlet-and-cover) (thanks pmichaud!).*
+_You can also see in the first photo that I'm using a PSU enclosure. You can find the model and its author [here](https://www.printables.com/model/53920-meanwell-lrs-350-outlet-and-cover) (thanks pmichaud!)._
 
 ## Full Screenshot
 
@@ -332,7 +335,7 @@ Due to a possible collision in the tensioner with the belt, I've opted to add sm
 
 ## Electronics Lid & Mobo Fan Mod
 
-*Hi! For this segment I'm utilising [this](https://www.printables.com/model/218425-btt-skr-mini-e3-4010-fan-holder) fan mod designed for a VORON V0.1 printer. Thanks 3DMegoldasok!*
+_Hi! For this segment I'm utilising [this](https://www.printables.com/model/218425-btt-skr-mini-e3-4010-fan-holder) fan mod designed for a VORON V0.1 printer. Thanks 3DMegoldasok!_
 
 I've firstly added a lid for the electronics box, secured with three M3 screws. There are two cutouts, one for a fan and one for the main stepper motor.
 
@@ -347,8 +350,18 @@ Additionally, I've added exhaust holes for the hot air to escape:
 ![grilles on the side of the box](img/2025/07/27/lid2.png)
 
 ## Minor Fixes
+
 These aren't on screenshots in the journal, but here are some minor fixes I implemented for consistency:
+
 - Mounting screw shafts for objects on top of the gantry extrusions have been reduced to 10mm, allowing for M5x15 screws to be used throughout the gantry. This has also happened on the toolhead, but just to make the screw size a bit more understandable (not at exactly 10mm though).
 - Gantry object screw shafts have been inspected and fixed (I had found holes in some areas of pulley holders)
 
 A lot of the time from this journal section was devoted to working on the BOM. I should be done with it tomorrow.
+
+# 2025-07-28/29 - Journaling
+
+**Estimated time:** 11 hours
+
+I've worked on the BOM for the two days this entry is allocated too. I also fixed a few things, which I'll list now:
+- I've made some screws more universal throughout the build (you'll see holes and raised bits on some of the stepper/gantry mounts to save screw usage)
+- I've fixed some mounting issues with the bed in CAD (wasn't being displayed right)
