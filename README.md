@@ -6,7 +6,7 @@
 
 # XT-1
 
-![Stage: Design](https://img.shields.io/badge/Stage-Design-pink?style=for-the-badge)
+![Stage: Design](https://img.shields.io/badge/Stage-Waiting_for_approval-red?style=for-the-badge)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/RedBigz/xt-1?style=for-the-badge&logo=github)
 [![Hack Club](https://img.shields.io/badge/Hack_Club-%23EC3750?style=for-the-badge&logo=hackclub&logoColor=white)](https://highway.hackclub.com)
 
