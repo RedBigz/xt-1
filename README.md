@@ -47,7 +47,7 @@ Here are some basic statistics for the printer:
 
 ## Supplementary Board
 
-\<WIP\>
+![Pcbnew view of the Supplementary Board of the XT-1](img/pcb/supp.png)
 
 ## T-Plug
 
