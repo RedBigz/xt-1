@@ -15,7 +15,9 @@ A modular CoreXY 3D Printer with a focus on repairability.
 | [READ THE JOURNAL](./JOURNAL.md) | [READ CAD CREDITS](CAD_CREDITS.md) |
 | -------------------------------- | ---------------------------------- |
 
-![A render of an XT-1 with a Benchy atop its bed](img/render.png)
+| ![A render of an XT-1 with a Benchy atop its bed](img/render/0001.png) | ![Gantry of an XT-1](img/render/0002.png)                  |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------- |
+| ![Close-up of the toolhead/bed of the XT-1](img/render/0003.png)       | ![Close-up of the bottom of the XT-1](img/render/0004.png) |
 
 ## Who I am and why I made this
 
