@@ -58,7 +58,7 @@ Here are some basic statistics for the printer:
 
 To export parts, open the model in OnShape [here](https://cad.onshape.com/documents/9bd0c3164ed27c6437ee23ee/w/6070e846ece5dc4f933b41e5/e/3b4b9a8834f82e5e0afe2787) (I would suggest plugging in your computer before downloading, the models are hundreds of megs and just rendering them has crashed my desktop RX 7800XT over 10 times when rendering the full assembly)
 
-To find the *assembly* in .STEP format, check the `asm` folder in this repo. (This is at )
+To find the _assembly_ in .STEP format, check the `asm` folder in this repo.
 
 ## Wiring Diagram
 
@@ -122,6 +122,8 @@ To find the *assembly* in .STEP format, check the `asm` folder in this repo. (Th
 | wuhushiyu              | T-Nuts                                                                  | M5 / 20 Series      | 150 | each  | 0.0676          | 10.14      | 6.69       | https://www.aliexpress.com/item/32814359094.html                  |
 |                        |                                                                         | M3 / 20 Series      | 50  | each  | 0.0782          | 3.91       | 2.58       |                                                                   |
 | Raspberry Pi           | Pi 4B (out of stock, cannot verify pricing details)                     | -                   | 1   | each  |                 | 0          | 0.00       |                                                                   |
+|                        | Pi Pico H                                                               | -                   | 1   | each  | 8               | 8          | 5.28       |                                                                   |
+| WGXCPP                 | 127/lot Heat Shrink Kit                                                 | -                   | 1   | kit   | 4.09            | 4.09       | 2.70       | https://www.aliexpress.com/item/1005001787291963.html             |
 | ?                      | microSD Card (self sourced)                                             | -                   | 2   | each  |                 | 0          | 0.00       |                                                                   |
 | Tojiato                | 4/lot GT2 Idlers W6B5                                                   | 20T                 | 2   | lot   | 5.89            | 11.78      | 7.77       | https://www.aliexpress.com/item/1005007557987612.html             |
 |                        |                                                                         | 20T Smooth          | 1   | lot   | 5.92            | 5.92       | 3.91       |                                                                   |
@@ -143,8 +145,8 @@ To find the *assembly* in .STEP format, check the `asm` folder in this repo. (Th
 | [Filament]             | 1kg PETG Black (self sourced)                                           |                     |     |       |                 | 0          | 0          |                                                                   |
 |                        | 1kg PETG Pink (self sourced)                                            |                     |     |       |                 | 0          | 0          |                                                                   |
 |                        |                                                                         |                     |     |       | Shipping        | 50.77      | 33.51      |                                                                   |
-|                        |                                                                         |                     |     |       | Subtotal        | 910.84     | 601.15     |                                                                   |
-|                        |                                                                         |                     |     |       | +10% GST        | 91.08      | 60.12      |                                                                   |
-|                        |                                                                         |                     |     |       | Total           | 1001.92    | 661.27     |                                                                   |
+|                        |                                                                         |                     |     |       | Subtotal        | 922.93     | 609.13     |                                                                   |
+|                        |                                                                         |                     |     |       | +10% GST        | 92.29      | 60.91      |                                                                   |
+|                        |                                                                         |                     |     |       | Total           | 1015.22    | 670.05     |                                                                   |
 |                        |                                                                         |                     |     |       | Hack Club Grant | 530.30     | 350.00     |                                                                   |
-|                        |                                                                         |                     |     |       | Out Of Pocket   | 471.61     | 311.27     |                                                                   |
+|                        |                                                                         |                     |     |       | Out Of Pocket   | 484.91     | 320.05     |                                                                   |
