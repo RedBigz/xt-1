@@ -5,7 +5,7 @@ description: "Modular CoreXY 3D Printer with a focus on repairability."
 created_at: "2025-07-15"
 ---
 
-**Total time:** 100 hours
+**Total time:** 104 hours
 
 # FOR REVIEWERS
 
